@@ -7,6 +7,7 @@ const uglify = require("gulp-uglify-es").default;
 const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
+const tildeImporter = require('node-sass-tilde-importer');
 
 
 function build() {
@@ -22,6 +23,7 @@ function build() {
 function cleanDist() {
     return del("dist");
 }
+
 
 function images() {
     return src("src/images/**/*")
@@ -60,7 +62,7 @@ function browsersync() {
 
 function styles() {
     return src("src/scss/style.scss")
-        .pipe(scss({outputStyle: "compressed"}))
+        .pipe(scss({outputStyle: "compressed", importer: tildeImporter}))
         .pipe(concat("style.min.css"))
         .pipe(autoprefixer({
             overrideBrowserslist: ["last 10 version"]
