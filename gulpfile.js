@@ -8,6 +8,7 @@ const autoprefixer = require("gulp-autoprefixer");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
 const tildeImporter = require('node-sass-tilde-importer');
+const webpack = require('webpack-stream');
 
 
 function build() {
@@ -44,8 +45,11 @@ function images() {
 
 function scripts() {
     return src([
-        "src/js/script.js"
+        "src/js/script.js",
     ])
+        .pipe(webpack({
+            // Any configuration options...
+        }))
         .pipe(concat("script.min.js"))
         .pipe(uglify())
         .pipe(dest("src/js"))

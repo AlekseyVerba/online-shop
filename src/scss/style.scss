@@ -1,4 +1,7 @@
 @import '~normalize.css/normalize';
+@import "./help/fonts.scss";
+@import "./base/header.scss";
+@import "./base/banner.scss";
 
 
 *,
@@ -37,6 +40,11 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
+    color: #2F3035;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "SFProDisplay-Regular", sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -48,6 +56,12 @@ ol[class] {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* Make images easier to work with */
@@ -77,4 +91,11 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
