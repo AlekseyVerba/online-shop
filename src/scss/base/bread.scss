@@ -1,0 +1,30 @@
+.bread {
+    margin: 40px 0;
+    &__list {
+        &-item {
+            display: inline-block;
+            font-size: 15px;
+            line-height: 18px;
+            color: #C4C4C4;
+            padding-right: 16px;
+            margin-right: 10px;
+            position: relative;
+            &:last-child {
+                &::after {
+                    display: none;
+                }
+            }
+            &::after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-top: 1px solid #C4C4C4;
+                border-right: 1px solid #C4C4C4;
+                position: absolute;
+                transform: rotate(42deg);
+                top: 5px;
+                right: 0;
+            }
+        }
+    }
+}

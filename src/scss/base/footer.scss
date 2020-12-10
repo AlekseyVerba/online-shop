@@ -1,0 +1,92 @@
+.footer {
+    background: #F0F0F4;
+    padding: 42px 0 25px;
+    &__base {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        // width: 350px;
+        width: 295px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 17px;
+
+        /* Основной текст */
+
+        color: #2F3035;
+        margin-bottom: 35px;
+    }
+    &__block {
+        width: 200px;
+        &-one {
+            margin-left: 150px;
+        }
+    }
+    &__form {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__input {
+       border: none;
+       padding: 0 12px;
+       font-size: 16px;
+        line-height: 17px;
+        outline: none;
+        &::placeholder {
+            color: #C4C4C4;
+        }
+    }
+    &__button {
+        cursor: pointer;
+        padding: 10px 16px;
+        font-size: 11px;
+        // line-height: 40px;
+        /* identical to box height */
+        color: #fff;
+        text-align: center;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        background: #1C62CD;
+        border: none;
+        outline: none;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__item {
+        font-size: 15px;
+        // line-height: 34px;
+    }
+    &__bold {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &__logo {
+        display: flex;
+        margin-left: 50px;
+        width: 250px;
+        justify-content: space-between;
+        padding-right: 60px;
+    }
+    &__down {
+        text-align: center;
+        margin-top: 46px;
+        a {
+            display: inline-block;
+            font-size: 11px;
+            line-height: 12px;
+            padding-left: 80px;
+            color: #48494D;
+/* identical to box height */
+
+
+color: #48494D;
+        }
+    }
+}

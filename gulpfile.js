@@ -9,6 +9,7 @@ const imagemin = require("gulp-imagemin");
 const del = require("del");
 const tildeImporter = require('node-sass-tilde-importer');
 const webpack = require('webpack-stream');
+const babel = require("gulp-babel");
 
 
 function build() {
@@ -50,6 +51,9 @@ function scripts() {
         .pipe(webpack({
             // Any configuration options...
         }))
+        .pipe(babel({
+            presets: ["@babel/preset-env"]
+          }))
         .pipe(concat("script.min.js"))
         .pipe(uglify())
         .pipe(dest("src/js"))

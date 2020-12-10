@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+@import "./plugin/ion.rangeSlider.css";
+@import "./plugin/jquery.formstyler.css";
 @import '~normalize.css/normalize';
 @import "./help/fonts.scss";
 @import "./base/header.scss";
 @import "./base/banner.scss";
+@import "./base/tabs.scss";
+@import "./base/catalog.scss";
+@import "./base/product.scss";
+@import "./base/footer.scss";
+@import "./base/bread.scss";
+@import "./base/filter.scss";
+@import "./base/magazine.scss";
 
 
 *,
@@ -56,7 +66,6 @@ ol[class] {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;
-    color: red;
 }
 
 a {
@@ -66,7 +75,8 @@ a {
 
 /* Make images easier to work with */
 img {
-    max-width: 100%;
+    // max-width: 100%;
+    // margin: 0 auto;
     display: block;
 }
 
