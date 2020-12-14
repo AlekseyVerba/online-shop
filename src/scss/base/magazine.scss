@@ -4,13 +4,18 @@
         // justify-content: space-between;
         margin-bottom: 100px;
     }
+
     &__left {
         min-width: 290px;
+        width: 290px;
+        padding-right: 4px;
+
         // height: 200px;
         &-tabs {
             display: flex;
             justify-content: space-between;
         }
+
         &-tab {
             width: 50%;
             font-size: 16px;
@@ -18,8 +23,9 @@
             letter-spacing: 0.09em;
             text-transform: uppercase;
             color: #C4C4C4;
-            margin-bottom: 40px;
+            // margin-bottom: 40px;
             cursor: pointer;
+
             &-active {
                 span {
                     padding-bottom: 7px;
@@ -30,6 +36,7 @@
             }
         }
     }
+
     &__right {
         display: flex;
         justify-content: space-between;
@@ -38,6 +45,7 @@
 
 
     }
+
     &__wrapper {
         // width: 100%;
         width: 271px;
@@ -45,13 +53,16 @@
         margin: 0;
         margin-bottom: 20px;
     }
-    &__wrapper + &__wrapper {
+
+    &__wrapper+&__wrapper {
         margin-left: 0;
     }
+
     &__right-down {
         padding-top: 40px;
         width: 100%;
     }
+
     &__right-list {
         display: flex;
         align-items: center;
@@ -59,21 +70,151 @@
         justify-content: center;
         margin-top: 70px;
     }
+
     &__right-item {
         font-size: 18px;
         line-height: 22px;
         color: #C4C4C4;
         margin-right: 10px;
         padding: 4px 11px;
+
         &:last-child {
             margin-right: 0;
         }
     }
+
     &__right-item.active {
         color: #1C62CD;
-        border: 2px solid #1C62CD;;
+        border: 2px solid #1C62CD;
+        ;
     }
+
+    &__filter {
+        &-drop {
+            margin: 40px 0;
+        }
+
+        &-title {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: #2F3035;
+            padding-left: 26px;
+            position: relative;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                display: block;
+                height: 10px;
+                width: 10px;
+                border-top: 2px solid #C4C4C4;
+                border-right: 2px solid #C4C4C4;
+                position: absolute;
+                left: 0;
+                bottom: 6px;
+                transform: rotate(-225deg);
+            }
+
+            &-active {
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 10px;
+                    width: 10px;
+                    border-top: 2px solid #C4C4C4;
+                    border-right: 2px solid #C4C4C4;
+                    position: absolute;
+                    left: 0;
+                    bottom: 6px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 19px;
+
+            &-wrap {
+                flex-wrap: nowrap;
+            }
+        }
+
+        &-box {
+            width: 50%;
+            margin-bottom: 14px;
+        }
+
+        &-link {
+            display: block;
+            width: 100%;
+            font-size: 14px;
+            line-height: 17px;
+            text-decoration-line: underline;
+            color: #1C62CD;
+        }
+
+        &-input-text {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+
+            input {
+                width: 100%;
+                border: 1px solid #E0E0E0;
+
+                padding: 3px 20px 3px;
+                outline: none;
+                font-size: 12px;
+
+                &::placeholder {
+                    font-size: 12px;
+                    line-height: 14px;
+                    /* identical to box height */
+                    color: #BDBEC2;
+                }
+            }
+        }
+
+        &-label {
+            font-size: 14px;
+            line-height: 17px;
+            color: #2F3035;
+            cursor: pointer;
+        }
+
+        &-list {
+            margin-bottom: 30px;
+        }
+
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            padding-bottom: none;
+            border-bottom: 2px solid #C4C4C4;
+            padding-left: 25px;
+        }
+
+        &-list-title {
+            font-size: 16px;
+            line-height: 19px;
+            color: #2F3035;
+            font-weight: bold;
+            min-width: 209px;
+        }
+    }
+
 }
+
 .prost {
     height: 60%;
+}
+
+.mb-80px {
+    margin-bottom: 80px;
+
 }

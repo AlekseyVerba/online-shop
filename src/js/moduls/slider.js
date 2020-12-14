@@ -1,5 +1,6 @@
 export default function slider(selectorItems, selectorWrap, selectorInner, leftSelector, rightSelector, make = false, any = false) {
-    let count = 0;
+    try {
+        let count = 0;
     const wrap = document.querySelector(selectorWrap),
           inner = wrap.querySelector(selectorInner),
           left = wrap.querySelector(leftSelector),
@@ -78,5 +79,6 @@ export default function slider(selectorItems, selectorWrap, selectorInner, leftS
             inner.style.transform = `translateX(-${slesh}px)` ;
         }
     });
+    } catch(e) {}
 
 }

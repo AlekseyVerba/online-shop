@@ -1,0 +1,234 @@
+.jq-checkbox,
+.jq-radio {
+    height: 14px;
+    width: 14px;
+    border: 1px solid #C4C4C4;
+    background: #fff;
+    border-radius: 2px;
+    margin-right: 8px;
+    vertical-align: -1px;
+    outline: none;
+    box-shadow: none;
+
+    &.checked {
+        background: #1C62CD;
+        border: 1px solid #1C62CD;
+        ;
+    }
+
+}
+
+.jq-checkbox.checked .jq-checkbox__div {
+    // display: none;
+    width: 8px;
+    height: 6px;
+    margin: 3px 0 0 2px;
+    border-bottom: none;
+    border-left: none;
+    transform: rotate(0);
+    background: url(../../images/Check.svg) no-repeat;
+}
+
+.jq-radio.checked .jq-radio__div {
+    width: 0;
+    height: 0;
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+.irs--flat {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.irs-from {
+    display: none;
+}
+
+.irs-to {
+    display: none;
+}
+
+.irs--flat .irs-line {
+    height: 1px;
+}
+
+.irs--flat .irs-bar {
+    top: 23px;
+    height: 3px;
+    background-color: #1C62CD;
+}
+
+.irs--flat .irs-handle>i:first-child {
+    position: absolute;
+    display: block;
+    top: -2px;
+    left: 50%;
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    margin-left: -1px;
+    background-color: #1C62CD;
+    cursor: pointer;
+}
+
+.irs--flat .irs-from,
+.irs--flat .irs-to,
+.irs--flat .irs-single {
+    display: none;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+    top: 50px;
+    color: #2F3035;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+    text-shadow: none;
+    background-color: transparent;
+    border-radius: 0;
+    visibility: visible !important;
+}
+
+.irs--flat .irs-min {
+    &::before {
+        content: "от ";
+        display: inline-block;
+        font-size: 14px;
+        line-height: 17px;
+        color: #C4C4C4;
+        margin-right: 12px;
+    }
+}
+
+.irs--flat .irs-max {
+    &::before {
+        content: "до ";
+        display: inline-block;
+        font-size: 14px;
+        line-height: 17px;
+        color: #C4C4C4;
+        margin-right: 12px;
+    }
+}
+
+.jq-selectbox__select {
+    height: 32px;
+    padding-right: 25px;
+    border: none;
+    border-bottom-color: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #48494D;
+    text-shadow: none;
+    background: transparent;
+}
+
+.jq-selectbox__trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 34px;
+    height: 100%;
+    border-left: none;
+}
+
+.jq-selectbox {
+    background: transparent;
+}
+
+.jq-selectbox__dropdown {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2px 0 0;
+    padding: 0;
+    border: 1px solid #E0E0E0;
+    border-radius: 0;
+    background: #FFF;
+    box-shadow: none;
+    font: sans-serif;
+}
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 10px;
+    border: none;
+    background: url(../../images/up.svg) no-repeat;
+    height: 14px;
+    width: 14px;
+    transform: rotate(-180deg);
+}
+
+.jq-selectbox__select:hover {
+    background: none;
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+    border: none
+}
+
+;
+
+.jq-selectbox__select:active {
+    background: transparent;
+    box-shadow: none;
+}
+
+.jq-selectbox li:hover {
+    background-color: rgb(247, 247, 247);
+    color: rgba($color: #000000, $alpha: 0.6);
+}
+
+.jq-selectbox__dropdown {
+    padding: 10px 0;
+}
+
+.jq-selectbox li.selected {
+    background-color: transparent;
+    color: rgba($color: #000000, $alpha: 0.6);
+}
+
+.jq-selectbox.opened .jq-selectbox__trigger-arrow {
+    transform: none;
+}
+
+.filter__select {
+    display: inline-block;
+    padding: 3px 46px 3px 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #2F3035;
+    -webkit-appearance: none;
+    border: 1.5px solid #D7D9DF;
+    margin-right: 35px;
+    outline: none;
+}
+
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 11px;
+    border: none;
+    background: url(../../images/up.svg) no-repeat;
+    height: 14px;
+    width: 14px;
+    right: 15px;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+
+.filter__select .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 11px;
+    border: none;
+    background: url(../../images/up.svg) no-repeat;
+    height: 14px;
+    width: 14px;
+    right: -10px;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}

@@ -22,6 +22,7 @@
             cursor: pointer;
             z-index: 1000;
         }
+
         &-item {
             width: 100%;
             // position: relative;
@@ -34,20 +35,24 @@
         &-right {
             right: 15px;
         }
+
         &-inner {
             // width: 2600px;
             // position: relative;
             display: flex;
         }
     }
+
     &__sale {
         box-sizing: border-box;
         width: 280px;
         border: 1px solid rgb(148, 148, 148);
+
         &-top {
             display: flex;
             justify-content: space-between;
         }
+
         &-box {
             font-family: 'Barlow', sans-serif;
             font-weight: bold;
@@ -62,9 +67,11 @@
             height: 30px;
             color: #FFFFFF;
         }
+
         &-prices {
             text-align: right;
         }
+
         &-new {
             font-weight: bold;
             font-size: 27px;
@@ -72,12 +79,14 @@
             color: #1C62CD;
             padding: 5px 7px 0 0;
         }
+
         &-old {
             color: #C4C4C4;
             font-size: 16px;
             padding-right: 5px;
             position: relative;
             display: block;
+
             // overflow: hidden;
             &::after {
                 content: "";
@@ -91,6 +100,7 @@
                 transform: rotate(-10deg);
             }
         }
+
         &-img {
             display: block;
             // width: 100%;
@@ -98,6 +108,7 @@
             // text-align: center;
             margin: 0 auto;
         }
+
         &-title {
 
             // padding: 0 60px;
@@ -109,6 +120,7 @@
 
             // text-align: center;
         }
+
         &-footer {
             background: #F0F0F4;
             // height: 99px;
@@ -119,6 +131,7 @@
             font-weight: normal;
             font-size: 18px;
             line-height: 21px;
+
             // margin-bottom: 5px;
             span {
                 font-weight: bold;
@@ -127,7 +140,7 @@
                 color: #1C62CD;
             }
         }
-        
+
     }
 }
 
@@ -138,6 +151,7 @@
     width: 100%;
     justify-content: center;
 }
+
 .doth {
     border: 1px solid rgb(255, 255, 255);
     border-radius: 100%;
@@ -146,6 +160,7 @@
     margin-right: 10px;
     cursor: pointer;
 }
+
 .active {
     background-color: #fff;
 }

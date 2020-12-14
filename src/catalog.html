@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="./css/plugin/ion.rangeSlider.css">
+    <link rel="stylesheet" href="./css/plugin/jquery.formstyler.css">
+    <link rel="stylesheet" href="./css/plugin/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="./css/plugin/jquery.rateyo.css">
+    <link rel="stylesheet"  href="css/style.min.css">
 </head>
 <body>
     <div class="header">
@@ -68,6 +72,596 @@
             </div>
         </div>
     </div>
+
+    <div class="filter">
+        <div class="container">
+                <h2 class="filter__title">Гидроциклы</h2>
+                <div class="filter__down">
+                    <div class="filter__left">
+                        <a href="#" class="filter__link">Полноприводные</a>
+                        <a href="#" class="filter__link">от 5000</a>
+                        <a href="#" class="filter__link">BRP</a>
+                        <a href="#" class="filter__link">еще</a>
+                    </div>
+                    <div class="filter__right">
+                        <select name="filter" id="filter" class="filter__select">
+                            <option value="popular">По популярности</option>
+                            <option value="popular">По дате</option>
+                            <option value="popular">По рейтингу</option>
+                        </select>
+                        <div class="filter__icons">
+                            <a href="#" class="filter__icon-link filter__icon-link-left filter__icon-link-active">
+                                <img src="./images/dop/query.svg" alt="query" class="filter__icon-img">
+                            </a>
+                            <a href="#" class="filter__icon-link filter__icon-link-right">
+                                <img src="./images/burger.svg" alt="query" class="filter__icon-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="magazine">
+        <div class="container">
+            <div class="magazine__inner">
+                <div class="magazine__left">
+                    <div class="magazine__left-tabs">
+                        <div class="magazine__left-tab magazine__left-tab-active"><span>Параметры</span></div>
+                        <div class="magazine__left-tab"><span>по марке</span></div>
+                    </div>
+                    <div class="magazine__left-contents">
+                        <div class="magazine__left-content">
+                            <form class="magazine__filter-form">
+                                <ul class="magazine__filter-list">
+                                    <li class="magazine__filter-drop">
+                                        <p class="magazine__filter-title magazine__filter-title-active">Наличие</p>
+                                        <div class="magazine__filter-content">
+                                            <div class="magazine__filter-box">
+                                                <label class="magazine__filter-label">
+                                                    <input type="checkbox" class="magazine__filter-input">
+                                                    В наличие
+                                                </label>
+                                            </div>
+                                            <div class="magazine__filter-box">
+                                                <label class="magazine__filter-label">
+                                                    <input type="checkbox" class="magazine__filter-input">
+                                                    Под заказ
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="magazine__filter-drop">
+                                        <p class="magazine__filter-title magazine__filter-title-active">Новинки</p>
+                                        <div class="magazine__filter-content magazine__filter-content-wrap">
+                                            <div class="magazine__filter-box">
+                                                <label class="magazine__filter-label">
+                                                    <input type="radio" name="radio" class="magazine__filter-input">
+                                                    Все
+                                                </label>
+                                            </div>
+                                            <div class="magazine__filter-box">
+                                                <label class="magazine__filter-label">
+                                                    <input type="radio" name="radio" class="magazine__filter-input">
+                                                    Новинки
+                                                </label>
+                                            </div>
+                                            <div class="magazine__filter-box">
+                                                <label class="magazine__filter-label">
+                                                    <input type="radio" name="radio" class="magazine__filter-input">
+                                                    Акции
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                        <li class="magazine__filter-drop mb-80px">
+                                            <p class="magazine__filter-title magazine__filter-title-active">Цена</p>
+                                            <div class="magazine__filter-content magazine__filter-content-wrap">
+                                                <input type="text" class="js-range-slider" name="my_range" value=""
+                                                data-type="double"
+                                                data-min="100000"
+                                                data-max="500000"
+                                                data-from="150000"
+                                                data-to="275000"
+                                                data-grid="false"
+                                            />
+                                            </div>
+                                        </li>
+                                        <li class="magazine__filter-list">
+                                            <div class="magazine__filter-container">
+                                                <p class="magazine__filter-list-title">
+                                                    Мощность, л.с.
+                                                </p>
+                                                <select class="magazine__filter-list-select">
+                                                    <option>90</option>
+                                                    <option>130</option>
+                                                    <option>154</option>
+                                                    <option>230</option>
+                                                    <option>300</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li class="magazine__filter-list">
+                                            <div class="magazine__filter-container">
+                                                <p class="magazine__filter-list-title">
+                                                    Мощность двигателя, л.с.
+                                                </p>
+                                                <select class="magazine__filter-list-select">
+                                                    <option>90</option>
+                                                    <option>130</option>
+                                                    <option>154</option>
+                                                    <option>230</option>
+                                                    <option>300</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li class="magazine__filter-list">
+                                            <div class="magazine__filter-container">
+                                                <p class="magazine__filter-list-title">
+                                                    Макс. скорость
+                                                </p>
+                                                <select class="magazine__filter-list-select">
+                                                    <option>90</option>
+                                                    <option>130</option>
+                                                    <option>154</option>
+                                                    <option>230</option>
+                                                    <option>300</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                        <li class="magazine__filter-drop">
+                                            <p class="magazine__filter-title magazine__filter-title-active">Бренд</p>
+                                            <div class="magazine__filter-content">
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        BRP
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        Spark 2
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        Spark 3 
+                                                    </label>
+                                                </div>
+                                                <a href="#" class="magazine__filter-link">Показать еще</a>
+                                            </div>
+                                        </li>
+                                        <li class="magazine__filter-drop">
+                                            <p class="magazine__filter-title magazine__filter-title-active">Модель</p>
+                                            <div class="magazine__filter-content">
+                                                <div class="magazine__filter-input-text">
+                                                    <input type="text" placeholder="Введите модель">
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        Sea-doo Spark 2
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        SeaDoo Spark 90 
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        SeaDoo GTI 155
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        SeaDoo GTR 230
+                                                    </label>
+                                                </div>
+                                                <a href="#" class="magazine__filter-link">Показать еще</a>
+                                            </div>
+                                        </li>
+                                        <li class="magazine__filter-drop big-checkbox">
+                                            <p class="magazine__filter-title magazine__filter-title-active">Акции</p>
+                                            <div class="magazine__filter-content btn-content">
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        <span class="magazine__filter-span">SALE</span>
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        <span class="magazine__filter-span">NEW</span>
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        <span class="magazine__filter-span">HIT</span>
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        <span class="magazine__filter-span">ДИЛЕР</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="magazine__filter-drop">
+                                            <p class="magazine__filter-title magazine__filter-title-active">Бренд</p>
+                                            <div class="magazine__filter-content">
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        Россия
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        Германия
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        Китай
+                                                    </label>
+                                                </div>
+                                                <div class="magazine__filter-box">
+                                                    <label class="magazine__filter-label">
+                                                        <input type="checkbox" class="magazine__filter-input">
+                                                        CША
+                                                    </label>
+                                                </div>
+                                                <a href="#" class="magazine__filter-link">Показать еще</a>
+                                            </div>
+                                        </li>
+                                        <li class="magazine__filter-post">
+                                            <button class="magazine__filter-submit" type="submit">ВЫБРАТЬ</button>
+                                        </li>
+                                        <li class="magazine__filter-add">
+                                            <p href="" class="magazine__filter-add-link">Дополнительные параметры</p>
+                                            <div class="magazine__filter-add-content">more</div>
+                                        </li>
+                                        <li class="magazine__filter-reset">
+                                            <input type="reset" value="Сбросить фильтр">
+                                        </li>
+                                </ul>
+                            </form>
+                        </div>
+                        <div class="magazine__left-content">2</div>
+                    </div>
+                </div>
+                <div class="magazine__right">
+                    <div class="product__wrapper magazine__wrapper ">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/gidro.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                100 000 000 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/orange.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/two.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/gidro.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/orange.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/two.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/gidro.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/orange.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/two.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/gidro.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/orange.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/two.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/gidro.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/orange.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    <div class="product__wrapper magazine__wrapper product__wrapper-not">
+                        <a href="#" class="product__item-not-link"><span>Сообщить о поступлении</span></a>
+                        <a href="#" class="product__item">
+                            <div class="prost">
+                                <p class="product__text-hover">посмотреть товар</p>
+                                <img src="./images/content/two.png" alt="#">
+                            </div>
+                            <h3 class="product__item-title">
+                                Водонепроницаемый рюкзак
+                            </h3>
+                            <p class="product__item-text">
+                                9 800 ₽
+                            </p>
+                            <p class="product__item-not">нет в наличии</p>
+                        </a>
+                        <button class="product__item-forever"></button>
+                        <button class="product__item-basket">
+                            <img src="./images/white-basket.svg" alt="basket">
+                        </button>
+                    </div>
+                    
+                    <div class="magazine__right-down">
+                        <ul class="magazine__right-list">
+                            <li class="magazine__right-item active"><a href="#">1</a></li>
+                            <li class="magazine__right-item"><a href="#">2</a></li>
+                            <li class="magazine__right-item"><a href="#">3</a></li>
+                            <li class="magazine__right-item"><a href="#">4</a></li>
+                            <li class="magazine__right-item"><a href="#">5</a></li>
+                            <li class="magazine__right-item"><span>...</span></li>
+                            <li class="magazine__right-item"><a href="#">11</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -113,6 +707,9 @@
             </div>
         </div>
     </div>
+    <!-- <script src="js/plugin/ion.rangeSlider.js"></script>
+    <script src="js/plugin/jquery.formstyler.js"></script>
+    <script src="js/plugin/jquery.rateyo.js"></script> -->
     <script src="js/script.min.js"></script>
 </body>
 </html>

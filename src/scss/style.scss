@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
-@import "./plugin/ion.rangeSlider.css";
-@import "./plugin/jquery.formstyler.css";
+// @import "/plugin/ion.rangeSlider.css";
+// @import "/plugin/jquery.formstyler.css";
+// @import "/plugin/jquery.rateyo.css";
+// @import "/plugin/jquery.formstyler.theme.css";
 @import '~normalize.css/normalize';
 @import "./help/fonts.scss";
 @import "./base/header.scss";
@@ -12,6 +14,8 @@
 @import "./base/bread.scss";
 @import "./base/filter.scss";
 @import "./base/magazine.scss";
+@import "./help/checkbox.scss";
+@import "./base/thing.scss";
 
 
 *,
