@@ -10,6 +10,14 @@ import rangeSlider from "./plugin/ion.rangeSlider";
 // import rateyo from "./plugin/jquery.rateyo";
 import drop from "./moduls/drop";
 import hlam from "./moduls/hlam";
+document.querySelectorAll(".product__slider").forEach(item => {
+    if (window.outerWidth > 1080) {
+        item.style.width = "1080px";
+    } else {
+        item.style.width = window.outerWidth + "px";
+    }
+});
+
 slider(".banner__slide-item", ".banner__slide", ".banner__slide-inner", ".banner__slide-left", ".banner__slide-right", true);
 slider(".product__content",)
 for (let i = 0; i < 12; i++) {
@@ -28,6 +36,10 @@ toggleClass(".thing__right-icon-favorite", "thing__right-icon-favorite-active");
 tabs(".magazine__left-tab", ".magazine__left-content", "magazine__left-tab-active");
 drop(".magazine__filter-title", "magazine__filter-title-active");
 drop(".magazine__filter-add-link", "magazine__filter-title-active", true);
+if (window.outerWidth < 999) {
+    drop(".footer__bold", "footer__bold-active");
+}
+drop(".magazine__filter-btn", "magazine__filter-btn-active", true);
 // document.querySelectorAll(".magazine__filter-input").forEach(item => {
 //     item.styler();
 // });
@@ -38,3 +50,4 @@ $(".js-range-slider").ionRangeSlider();
 $(".filter__select").styler();
 hlam();
 $(".panel__content-checkbox").styler();
+console.log("ауе");

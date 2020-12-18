@@ -1,7 +1,7 @@
 .jq-checkbox,
 .jq-radio {
-    height: 14px;
-    width: 14px;
+    min-height: 14px;
+    min-width: 14px;
     border: 1px solid #C4C4C4;
     background: #fff;
     border-radius: 2px;

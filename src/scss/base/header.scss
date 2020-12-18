@@ -6,6 +6,7 @@
         align-items: center;
         font-family: "SFProDisplay-Bold", sans-serif;
         font-weight: 700;
+        position: relative;
     }
 
     &__box {
@@ -67,7 +68,7 @@
         &-list {
             display: flex;
             justify-content: space-around;
-
+            position: relative;
             min-height: 53px;
             align-items: center;
             background: #F0F0F4;
@@ -128,4 +129,85 @@
         text-decoration: none;
 
     }
+
+    &__burger {
+        background: transparent;
+        border: none;
+        outline: none;
+        display: none;
+
+        &-line {
+            background: #2F3035;
+            border-radius: 3px;
+            width: 34px;
+            height: 3px;
+            margin: 9px 0;
+        }
+    }
+}
+
+.burger {
+    &__list {
+        transform: translateX(-110%);
+        background: #FFFFFF;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        position: absolute;
+        width: 243px;
+        transition: 0.5s all;
+        padding-bottom: 100px !important;
+
+        &-active {
+            transform: translateX(0%);
+        }
+    }
+
+    &__item {
+        padding-left: 53px;
+        margin-top: 46px;
+        position: relative;
+        padding-bottom: 1px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        &-img {
+            position: absolute;
+            left: 11px;
+            bottom: 0;
+        }
+    }
+
+    &__adress {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2F3035;
+        padding-left: 44px;
+        margin-top: 60px;
+    }
+}
+
+.header__mobile {
+    &-list {
+        display: none;
+        padding: 0 20px !important;
+        justify-content: space-between;
+        background: #F0F0F4;
+    }
+
+    &-item {
+        padding: 14px 0;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+
+        /* Основной текст */
+
+        color: #2F3035;
+    }
+
+}
+
+.logo-mobile {
+    display: none;
 }

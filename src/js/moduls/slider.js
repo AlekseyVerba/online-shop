@@ -7,6 +7,7 @@ export default function slider(selectorItems, selectorWrap, selectorInner, leftS
           right = wrap.querySelector(rightSelector),
           items = wrap.querySelectorAll(selectorItems);
     let width = getComputedStyle(wrap).width;
+    wrap.style.width = window.innerWidth;
     let slesh = 0;
     if (make) {
         const dothsWrap = document.createElement("div");

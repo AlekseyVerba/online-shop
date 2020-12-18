@@ -33,6 +33,13 @@ export default function hlam() {
                     });
                 });
         }
+
+        function burger() {
+            document.querySelector(".menu__burger").addEventListener("click", () => {
+                document.querySelector(".burger__list").classList.toggle("burger__list-active");
+            })
+        }
+        burger();
     
         moreWidth();
     } catch(e) {}

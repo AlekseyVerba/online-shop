@@ -11,6 +11,11 @@
         <div class="header__up">
             <div class="container">
                 <div class="header__up-inner">
+                    <button class="menu__burger">
+                        <div class="menu__burger-line"></div>
+                        <div class="menu__burger-line"></div>
+                        <div class="menu__burger-line"></div>
+                    </button>
                     <nav class="menu">
                         <ul class="menu__list">
                             <li class="menu__item"><a href="#" class="menu__link">Магазины</a></li>
@@ -22,7 +27,8 @@
                             <li class="menu__item"><a href="#" class="menu__link">Доставка и оплата</a></li>
                         </ul>
                     </nav>
-                    <a href="#" class="logo"><img src="./images/лого.svg" alt="#" class="header__img"></a>
+                    <a href="#" class="logo-pk"><img src="./images/лого.svg" alt="#" class="header__img"></a>
+                    <a href="#" class="logo-mobile"><img src="./images/mobile/logo.svg" alt="#" class="header__img"></a>
                     <div class="header__box">
                         <div class="header__adress">
                             Москва,  ул. Науки  25
@@ -39,7 +45,66 @@
                     </div>
                 </div>
             </div>
+            <ul class="burger__list">
+                <li class="burger__item">
+                    <img src="./images/burger/user.svg" alt="user" class="burger__item-img">
+                    <a href="#" class="burger__item-link">Войти</a>
+                </li>
+                <li class="burger__item">
+                    <img src="./images/burger/user.svg" alt="user" class="burger__item-img">
+                    <a href="#" class="burger__item-link">Регистрация</a>
+                </li>
+                <li class="burger__item">
+                    <img src="./images/burger/like.svg" alt="like" class="burger__item-img">
+                    <a href="#" class="burger__item-link">Избранное</a>
+                </li>
+                <li class="burger__item">
+                    <img src="./images/burger/basket.svg" alt="basket" class="burger__item-img">
+                    <a href="#" class="burger__item-link">Корзина</a>
+                </li>
+                <li class="burger__item">
+                    <img src="./images/burger/home.svg" alt="home" class="burger__item-img">
+                    <a href="#" class="burger__item-link">Магазины</a>
+                </li>
+                <li class="burger__item">
+                    <img src="./images/burger/procent.svg" alt="procent" class="burger__item-img">
+                    <a href="#" class="burger__item-link">Акции</a>
+                </li>
+                <li class="burger__item">
+                    <img src="./images/burger/box.svg" alt="box" class="burger__item-img">
+                    <a href="#" class="burger__item-link">Доставка и оплата</a>
+                </li>
+                <li class="burger__item">
+                    <a href="#" class="burger__item-link">Квадроциклы</a>
+                </li>
+                <li class="burger__item">
+                    <a href="#" class="burger__item-link">Катера</a>
+                </li>
+                <li class="burger__item">
+                    <a href="#" class="burger__item-link">Гидроциклы</a>
+                </li>
+                <li class="burger__item">
+                    <a href="#" class="burger__item-link">Лодки</a>
+                </li>
+                <li class="burger__item">
+                    <a href="#" class="burger__item-link">Вездеходы</a>
+                </li>
+                <li class="burger__item">
+                    <a href="#" class="burger__item-link">Снегоходы</a>
+                </li>
+                <li class="burger__item">
+                    <a href="#" class="burger__item-link">Двигатели</a>
+                </li>
+                <li class="burger__item">
+                    <a href="#" class="burger__item-link">Запчасти</a>
+                </li>
+                <li class="burger__adress">
+                    Москва, <br>
+                    ул. Науки  25
+                </li>
+            </ul>
         </div>
+        
         <div class="header__down">
             <div class="container">
                 <ul class="header__down-list">
@@ -52,7 +117,19 @@
                     <li class="header__down-item"><a href="#" class="header__down-link">Двигатели</a></li>
                     <li class="header__down-item"><a href="#" class="header__down-link">Запчасти</a></li>
                 </ul>
+                <ul class="header__mobile-list">
+                    <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Магазины</a>
+                    </li>
+                    <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Акции</a>
+                    </li>
+                    <li class="header__mobile-item">
+                        <a href="#" class="header__mobile-link">Доставка и оплата</a>
+                    </li>
+                </ul>
             </div>
+            
         </div>
     </div>
     <section class="banner">
@@ -115,18 +192,21 @@
                     <div class="search__content-item" id="tab1">
                         <form class="search__form">
                             <input type="text" class="search__content-input" placeholder="Введите номер">
+                            <img src="./images/mobile/lupa.svg" alt="lupa" class="search__form-img">
                             <button class="search__content-btn">искать</button>
                         </form>
                     </div>
                     <div class="search__content-item" id="tab2">
                         <form class="search__form">
                             <input type="text" class="search__content-input" placeholder="Введите марку">
+                            <img src="./images/mobile/lupa.svg" alt="lupa" class="search__form-img">
                             <button class="search__content-btn">искать</button>
                         </form>
                     </div>
                     <div class="search__content-item" id="tab3">
                         <form class="search__form">
                             <input type="text" class="search__content-input" placeholder="Введите название товара">
+                            <img src="./images/mobile/lupa.svg" alt="lupa" class="search__form-img">
                             <button class="search__content-btn">искать</button>
                         </form>
                     </div>
@@ -194,6 +274,7 @@
             </div>
         </div>
     </div>
+        
     <div class="product">
         <div class="container">
             <div class="product__inner">
@@ -1197,7 +1278,8 @@
     <div class="super__banner">
         <div class="container">
             <a href="#" class="super__baner-content">
-                <img src="./images/catalog/superBanner.jpg" alt="">
+                <img src="./images/catalog/superBanner.jpg" alt="#" class="banner-small-pk">
+                <img src="./images/mobile/banner-mobile.jpg" alt="#" class="banner-small-mobile">
             </a>
         </div>
     </div>
@@ -2197,7 +2279,6 @@
             </div>
         </div>
         </div>
-        
     </div>
     <div class="footer">
         <div class="container">
@@ -2213,8 +2294,8 @@
                         </form>
                     </div>
                     <div class="footer__block footer__block-one">
+                        <p class="footer__bold">Информация</p>
                         <ul class="footer__info">
-                            <li class="footer__item footer__bold">Информация</li>
                             <li class="footer__item"><a href="#" class="footer__item-link">Контакты</a></li>
                             <li class="footer__item"><a href="#" class="footer__item-link">О компании</a></li>
                             <li class="footer__item"><a href="#" class="footer__item-link">Акции</a></li>
@@ -2222,8 +2303,8 @@
                         </ul>
                     </div>
                     <div class="footer__block">
+                        <p class="footer__bold">Интернет-магазин</p>
                         <ul class="footer__info">
-                            <li class="footer__item footer__bold">Интернет-магазин</li>
                             <li class="footer__item"><a href="#" class="footer__item-link">Доставка и самовывоз</a></li>
                             <li class="footer__item"><a href="#" class="footer__item-link">Оплата</a></li>
                             <li class="footer__item"><a href="#" class="footer__item-link">Возрат-обмен</a></li>
@@ -2244,6 +2325,20 @@
             </div>
         </div>
     </div>
+    
+    <!-- <div class="footer__mobile">
+        <div class="container">
+            <div class="footer__mobile-inner">
+                <p class="footer__title">
+                    Подпишитесь на нашу рассылку<br> и узнавайте о акция быстрее
+                </p>
+                <form  class="footer__form">
+                    <input type="text" class="footer__input" placeholder="Введите ваш e-mail:">
+                    <button class="footer__button" type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div> -->
     <script src="js/script.min.js"></script>
 </body>
 </html>

@@ -1,34 +1,52 @@
 .search {
     margin-bottom: 80px;
-     &__tabs {
-         margin-bottom: 40px;
-         &-item {
+
+    &__form {
+        position: relative;
+    }
+
+    &__form-img {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: none;
+    }
+
+    &__tabs {
+        margin-bottom: 40px;
+
+        &-item {
             font-size: 20px;
             line-height: 24px;
             color: #2F3035;
             padding: 11px 26px;
             border-radius: 7px;
+
             &-active {
                 background: #F0F0F4;
                 font-weight: bold;
             }
-         }
-         &-item + &-item {
-             margin-left: 20px;
-         }
-     }
-     &__content-item {
-         display: flex;
-         align-items: center;
-     }
-     &__content-input {
-         width: 1045px;
+        }
+
+        &-item+&-item {
+            margin-left: 20px;
+        }
+    }
+
+    &__content-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__content-input {
+        width: 87%;
         //  max-width: 1045px;
-         height: 50px;
-         margin-right: 0;
-         padding-right: 0;
-         display: inline-block;
-         font-size: 16px;
+        height: 50px;
+        margin-right: 0;
+        padding-right: 0;
+        display: inline-block;
+        font-size: 16px;
         line-height: 19px;
 
         color: #656464;
@@ -38,8 +56,9 @@
         padding: 0 20px;
         outline: none;
         //  display: block;
-     }
-     &__content-btn {
+    }
+
+    &__content-btn {
         //  display: block;
         margin-left: -6px;
         font-weight: bold;
@@ -50,15 +69,17 @@
 
         letter-spacing: 0.12em;
         text-transform: uppercase;
-        padding: 19px 40px 17px;
+        padding: 19px 0 17px;
         background: #1C62CD;
+        width: 12%;
         border-radius: 3px;
         transition: .3s all;
         border: none;
         cursor: pointer;
+
         &:hover {
             background: #4d81cf;
         }
 
-     }
+    }
 }

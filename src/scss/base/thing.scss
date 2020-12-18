@@ -227,7 +227,7 @@
         }
 
         &-four {
-            width: 18%;
+            width: 21%;
         }
 
         &-five {
@@ -356,4 +356,18 @@
     align-items: center;
     display: flex;
     margin-right: 50px;
+}
+
+.super__baner-content {
+    max-width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.thing__right-buy-mobile {
+    width: 100%;
+    margin-top: -70px;
+    display: none;
 }

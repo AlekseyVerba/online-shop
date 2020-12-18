@@ -16,6 +16,7 @@
 @import "./base/magazine.scss";
 @import "./help/checkbox.scss";
 @import "./base/thing.scss";
+@import "./base/media.scss";
 
 
 *,
@@ -59,6 +60,8 @@ body {
     line-height: 24px;
     font-weight: 400;
     font-family: "SFProDisplay-Regular", sans-serif;
+    min-width: 320px;
+    overflow-x: hidden;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -68,9 +71,6 @@ ol[class] {
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
-    text-decoration-skip-ink: auto;
-}
 
 a {
     text-decoration: none;
@@ -112,4 +112,5 @@ select {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
